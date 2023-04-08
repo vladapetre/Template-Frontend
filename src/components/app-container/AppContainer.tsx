@@ -2,7 +2,7 @@ import { IAppContainerProps } from './types'
 
 const AppContainer = (props: IAppContainerProps): JSX.Element => {
   const { children } = props
-  return <>{{ children }}</> 
+  return <div>{children}</div>
 }
 
 export default AppContainer

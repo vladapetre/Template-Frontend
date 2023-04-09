@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import Router from 'routing'
-import { startupService } from 'services/startup'
+import Router from './routing'
+import { startupService } from './services/startup'
 
 const App = () => {
   const [isReady, setIsReady] = useState(false)
@@ -14,7 +14,7 @@ const App = () => {
 
   if (!isReady) {
     // Here you can also return a loading screen, while your app is bootstraping
-    return null
+    return <div>Not ready</div>
   }
 
   return (

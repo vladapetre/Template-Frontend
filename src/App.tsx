@@ -1,6 +1,26 @@
-import * as React from 'react'
+import { useEffect, useState } from 'react'
+import Router from 'routing'
+import { startupService } from 'services/startup'
 
 const App = () => {
-  return <h3> Welcome to React Boilerplate </h3>
+  const [isReady, setIsReady] = useState(false)
+
+  useEffect(() => {
+    ;(async () => {
+      await startupService.initialize()
+      setIsReady(true)
+    })()
+  }, [])
+
+  if (!isReady) {
+    // Here you can also return a loading screen, while your app is bootstraping
+    return null
+  }
+
+  return (
+    <div>
+      <Router />
+    </div>
+  )
 }
 export default App

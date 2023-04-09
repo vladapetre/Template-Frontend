@@ -1,0 +1,1 @@
+export const TEMPLATE_SET_NAME = '[TEMPLATE] SET_NAME'

@@ -8,6 +8,6 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env.name': JSON.stringify('Codevolution'),
     }),
-    new BundleAnalyzerPlugin()
+    new BundleAnalyzerPlugin({ analyzerMode: 'static', openAnalyzer: false })
   ],
 }

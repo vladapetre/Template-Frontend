@@ -1,0 +1,12 @@
+services:
+  client:
+    image: client
+    container_name: client
+    restart: always
+    build:
+      context: .
+      dockerfile: .devops/docker/dockerfile
+      target: production
+    ports:
+      - 80:80
+      - 443:443

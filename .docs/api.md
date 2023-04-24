@@ -1,0 +1,1 @@
+npx openapi-generator-cli generate     -i http://localhost:5101/swagger/v1/swagger.json    -o ./src/api/api-client   -g typescript-axios    --artifact-version 1.0.0-SNAPSHOT

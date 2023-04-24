@@ -1,7 +1,7 @@
 import { createAction } from '@reduxjs/toolkit'
-import { TEMPLATE_SET_NAME } from '../constants'
+import { EXAMPLE_SET_NAME } from '../constants'
 
-export const setTemplateNameAction = createAction<string>(TEMPLATE_SET_NAME)
+export const setExampleNameAction = createAction<string>(EXAMPLE_SET_NAME)
 
 // export const fetchProfileAsync = createAsyncThunk(PROFILE__GET, async (__, thunkApi) => {
 //   try {

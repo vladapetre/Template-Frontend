@@ -1,5 +1,5 @@
 import { combineReducers } from '@reduxjs/toolkit'
-import templateReducer from './template'
+import exampleReducer from './example'
 import authorizationReducer from './authorization'
 /**
  * Register application wide reducers here
@@ -7,7 +7,7 @@ import authorizationReducer from './authorization'
  * in the object passed to the combineReducers function
  */
 const rootReducer = combineReducers({
-  template: templateReducer,
+  example: exampleReducer,
   authorization: authorizationReducer,
 })
 
